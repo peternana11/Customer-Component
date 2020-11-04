@@ -1,0 +1,40 @@
+
+
+<p>
+</p>
+<b><H1 style="text-align:center;"> Update Here
+</H1></b>
+<form class="example-form" style="text-align:center;" >
+    
+<div>
+    <p>
+        <mat-form-field class="example-full-width" >
+            <mat-label >First name</mat-label>
+            <input matInput [(ngModel)]="userData.firstname" name="firstname" placeholder="Ex. John" required>
+          </mat-form-field>
+    </p>
+</div>
+    <p>
+        <mat-form-field class="example-full-width">
+            <mat-label>Last name</mat-label>
+            <input matInput [(ngModel)]="userData.lastname" name="lastname" placeholder="Ex. Doe" required>
+          </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput [(ngModel)]="userData.email" name="email" placeholder="Ex.JohnDoe@email.com" required type="email"> 
+          </mat-form-field>
+    </p>
+     <p>
+      <mat-form-field class="example-full-width">
+        <mat-label>Telephone</mat-label>
+        <span matPrefix>+1 &nbsp;</span>
+        <input type="tel" matInput [(ngModel)]="userData.telephone" name="telephone"placeholder="555-555-1234" required>
+        <mat-icon matSuffix></mat-icon>
+      </mat-form-field>
+      </p>
+    <p>
+        <button mat-raised-button color="primary" (click)="Post()">Update</button>
+    </p>
+  </form>
