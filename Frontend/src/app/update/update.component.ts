@@ -26,11 +26,5 @@ export class UpdateComponent {
         this.apiService.updateUser(this.userData, id)
       }
 
-      // GotoUpdate(){
-      //   let id = this.route.snapshot.params.id;
-      //   this.router.navigateByUrl('update/'+ id)
-      // }
-  // id(userData: { firstname: string; lastname: string; email: string; telephone: string; }, id) {
-  //   throw new Error("Method not implemented.");
-  // }
+   
 }

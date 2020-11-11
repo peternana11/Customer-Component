@@ -1,16 +1,16 @@
-<body>
+<body class="bg-img">
 <p>
 </p>
 <b><H1 style="text-align:center;"> Register Here
 </H1></b>
-
+<p style="text-align:center;">Please fill in this form to create an account.</p>
 
 <form class="example-form" style="text-align:center;" >
     
-<div>
+<div class="container"  >
     <p>
         <mat-form-field class="example-full-width" >
-            <mat-label >First name</mat-label>
+          <mat-label>First name</mat-label>
             <input matInput [(ngModel)]="registerData.firstname" name="firstname" placeholder="Ex. John" required>
           </mat-form-field>
     </p>
@@ -41,6 +41,7 @@
         <mat-icon matSuffix></mat-icon>
       </mat-form-field>
       </p>
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
     <p>
         <button mat-raised-button color="primary" (click)="Post()">Register</button>
     </p>
